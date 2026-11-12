@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editProductMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".EditProduct">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Product"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Product Image -->
+            <ImageView
+                android:id="@+id/productImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_13"
+                android:background="@drawable/image_border"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Select Image Button -->
+            <Button
+                android:id="@+id/selectImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Image"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Product Name -->
+            <EditText
+                android:id="@+id/productName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product Name"
+                android:inputType="textPersonName"
+
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Product Brand -->
+            <EditText
+                android:id="@+id/productBrand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Brand"
+                android:inputType="text"
+
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Product Price -->
+            <EditText
+                android:id="@+id/productPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Price"
+                android:inputType="numberDecimal"
+
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Product Description -->
+            <EditText
+                android:id="@+id/productDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Save Button -->
+            <Button
+                android:id="@+id/saveProductButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Changes"
+
+                android:textColor="@android:color/white"
+                android:padding="14dp"
+                android:textAllCaps="false"/>
+
+            <!-- Progress Bar -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="16dp"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

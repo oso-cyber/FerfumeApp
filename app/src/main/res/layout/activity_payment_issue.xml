@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="?android:colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Issue Detected"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorOnBackground"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Short description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We couldn’t process your payment. Please choose one of the options below to resolve the issue."
+            android:textSize="14sp"
+            android:textColor="?attr/colorOnBackground"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Retry Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_retry_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Retry Payment"
+            style="@style/Widget.Material3.Button"
+            app:cornerRadius="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Change Method -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_change_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Payment Method"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            app:cornerRadius="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Cancel Order -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_cancel_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel Order"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            app:cornerRadius="12dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Contact Support -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Need help? Contact our support team:"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_email_support"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+
+                app:iconPadding="6dp"
+                app:cornerRadius="10dp"
+                android:layout_marginEnd="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_chat_support"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chat"
+
+                app:iconPadding="6dp"
+                app:cornerRadius="10dp" />
+        </LinearLayout>
+
+        <!-- Refund Policy -->
+        <TextView
+            android:id="@+id/tv_refund_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View our Refund  Return Policy"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Disclaimer -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Note: Orders are not finalized until a successful payment is received. Please resolve this issue within 24 hours to avoid cancellation."
+            android:textSize="12sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:gravity="center" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

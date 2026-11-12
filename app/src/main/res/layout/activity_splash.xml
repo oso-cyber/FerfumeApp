@@ -1,0 +1,24 @@
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/motionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/motion_scene"
+    android:background="#FFFFFF">
+
+    <!-- Background Image (example) -->
+    <ImageView
+        android:id="@+id/cakeImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="228dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
+

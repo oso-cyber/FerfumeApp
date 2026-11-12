@@ -1,0 +1,100 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:layout_margin="8dp"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="12dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+
+        <!-- Left side (Product Image) -->
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/img_11"
+            android:scaleType="centerCrop"
+            android:contentDescription="Product Image"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Right side (Product Info and Heart Icon) -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingEnd="8dp">
+
+            <!-- Product Info -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Product Name -->
+                <TextView
+                    android:id="@+id/textViewProductName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Name"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <!-- Product Brand -->
+                <TextView
+                    android:id="@+id/textViewProductBrand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Brand"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="4dp" />
+
+                <!-- Product Price -->
+                <TextView
+                    android:id="@+id/textViewProductPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="4dp" />
+
+                <!-- Product Scent -->
+                <TextView
+                    android:id="@+id/textViewProductScent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scent"
+                    android:visibility="invisible"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="4dp" />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Heart Icon -->
+        <ImageView
+            android:id="@+id/heartIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/vector"
+            android:contentDescription="Favorite Icon" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+

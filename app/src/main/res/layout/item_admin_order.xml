@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    android:layout_marginBottom="12dp"
+    android:elevation="4dp">
+
+    <!-- Order ID -->
+    <TextView
+        android:id="@+id/textOrderId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="italic"
+        android:text="Order ID: #######"
+        android:paddingBottom="6dp" />
+
+    <!-- Order Details -->
+    <TextView
+        android:id="@+id/textOrderDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="Order Details"
+        android:textStyle="bold"
+        android:paddingBottom="4dp" />
+
+    <!-- Order Status -->
+    <TextView
+        android:id="@+id/textOrderStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:text="Status: Pending"
+        android:paddingBottom="2dp" />
+
+    <!-- Order Timestamp -->
+    <TextView
+        android:id="@+id/textOrderTimestamp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:text="Placed on: 2025-11-03"
+        android:paddingBottom="8dp" />
+
+    <!-- Approve / Reject Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnApprove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Approve"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnReject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reject"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>
+

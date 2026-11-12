@@ -1,0 +1,7 @@
+Password hashing & salting: You’re using bcrypt.genSalt and bcrypt.hash for secure password storage.
+
+Strong password validation: The regex enforces at least 8 characters, one uppercase, one lowercase, and one number.
+
+Email validation: Ensures users enter a valid email format.
+
+Secure login check: Passwords are compared using bcrypt.compare, so plaintext passwords are never stored.
